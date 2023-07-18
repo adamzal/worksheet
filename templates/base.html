@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Worksheet</title>        
+    </head>
+    <body>        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Rejestration</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Worksheets</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                {% block body_block %}
+
+                {% endblock %}
+            </div>
+        </main>        
+        <footer>
+            &copy 2023 Adam Zalewski
+        </footer>
+    </body>
+</html>
