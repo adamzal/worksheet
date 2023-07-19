@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends '../app/base.html' %}
 {% block body_block %}
 
 <div>
@@ -6,9 +6,9 @@
     <form method="POST">
         {% csrf_token %}
         <label for="name">Username: <input type="text" name="name"></label>
-        <label for="surname">Username: <input type="text" name="surname"></label>
-        <label for="payroll">Username: <input type="text" name="payroll"></label>
-        <label for="bonus">Username: <input type="text" name="bonus"></label>
+        <label for="surname">Surname: <input type="text" name="surname"></label>
+        <label for="payroll">Payroll: <input type="text" name="payroll"></label>
+        <label for="bonus">Bonus: <input type="text" name="bonus"></label>
         <label for="password_1">Password: <input type="text" name="password_1"></label>
         <label for="password_2">Password: <input type="text" name="password_2"></label>
         <button type="submit">Register</button>
